@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAEH ALUMI&GLASS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="imagens/favicom-removebg-preview.png" type="image/png">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>FAEH ALUMI&GLASS</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Transformando seu sonho de alumínios e vidros em soluções modernas de sua preferência</h2>
+      <p>Qualidade, segurança e beleza para sua casa ou empresa.</p>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma empresa especializada em esquadrias de alumínio e serviços de vidraçaria, atuando com excelência no mercado, atuando em Várzea-Paulista, Jundiaí, Jarinu, Campo limpo, Itupeva, Campinas e regiões próximas.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul class="servicos-lista">
+      <li>Instalação de box para banheiro (até o teto ou um modelo de sua preferência)</li>
+      <li>Portas de vidros persinalizadas</li>
+      <li>Janelas e portas de alumínio ou vidro sob medida</li>
+      <li>Espelhos decorativos e funcionais padrões ou personalizados</li>
+      <li>Para-peitos de sacada, interno, escadas no geral</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Confira alguns de nossos trabalhos</h2>
+    <div class="galeria">
+      <img src="imagens/box.jpeg.jpeg" alt="Box de vidro" />
+      <img src="imagens/portavidro.jpeg.jpeg" alt="Porta de vidro" />
+      <img src="imagens/corrimão.jpeg.jpeg" alt="Corrimão com vidro" />
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Gostou? entre em contato conosco!</h2>
+    <form action="#">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="email" id="email" placeholder="Seu e-mail" required />
+      <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <a href="#" id="btnWhatsapp" class="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FAEH ALUMI&GLASS. Todos os direitos reservados. <br>
+    Site feito por João Rafael, contatos: Cel 11 944711646 - Gmail joaorafasoares01@gmail.com</p>
+  </footer>
+
+  <script>
+    document.getElementById("btnWhatsapp").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const mensagem = document.getElementById("mensagem").value;
+
+      const texto = `Olá! Meu nome é ${nome}. Meu e-mail é ${email}. Mensagem: ${mensagem}`;
+      const numero = "5511997612035"; 
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+      window.open(url, "_blank");
+    });
+  </script>
+
+</body>
+</html>
+

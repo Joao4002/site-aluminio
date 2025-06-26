@@ -1,0 +1,171 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #e3e3e3;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+.hero {
+  background: url('imagens/imagemhero.jpg') no-repeat center center/cover;
+  color: #ecf0f1;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  text-transform: uppercase;
+  
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 62, 80, 0.7);
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#servicos ul {
+  list-style: disc inside;
+  padding-left: 1.5rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+input, textarea {
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px #1abc9c;
+}
+
+button {
+  background: #2c3e50;
+  color: #ecf0f1;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #16a085;
+}
+
+.whatsapp-btn {
+  display: block;
+  margin: 1.5rem auto;
+  background: #25D366;
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe57;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #ecf0f1;
+  color: #7f8c8d;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+  margin-top: 3rem;
+}
+
