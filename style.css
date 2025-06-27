@@ -192,7 +192,8 @@ nav ul {
   }
 
   nav ul {
-    flex-direction: row; /* Itens lado a lado */
+    display: flex;
+    flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
