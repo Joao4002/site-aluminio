@@ -178,24 +178,27 @@ nav ul {
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   nav ul {
     flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
-    padding-left: 0; 
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0;
+    margin: 0;
   }
 
   nav ul li {
-    width: 100%;
+    width: auto;
   }
 
   nav a {
-    display: block;
-    padding: 0.5rem 0;
-    width: 100%;
+    padding: 0.4rem 0.8rem;
+    width: auto;
+    font-size: 0.95rem;
   }
 }
+
 
