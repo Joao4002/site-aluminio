@@ -176,6 +176,15 @@ nav ul {
 
 
 @media (max-width: 600px) {
+  header {
+    padding: 0.5rem 0; /* Reduz o espaço interno do cabeçalho */
+  }
+
+  header h1 {
+    font-size: 1.2rem; /* Diminui o tamanho da logo/marca no mobile */
+    text-align: center;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
