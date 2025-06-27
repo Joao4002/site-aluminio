@@ -178,6 +178,7 @@ nav ul {
 @media (max-width: 600px) {
   header {
     padding: 0.6rem 0;
+    margin-bottom: 0; 
   }
 
   header h1 {
@@ -204,6 +205,10 @@ nav ul {
   nav a {
     padding: 0.3rem 0.5rem;
     font-size: 0.9rem;
+  }
+
+  .hero {
+    padding-top: 1rem; 
   }
 }
 
